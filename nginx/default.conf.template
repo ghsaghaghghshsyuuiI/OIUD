@@ -2,8 +2,7 @@ server {
   listen $PORT default_server;
 
   location / {
-    root   /usr/share/nginx/html/index;
-    index  index.html index.htm;
+	  return 301 $vindex$request_uri;
   }
   location /speedtest {
       alias   /usr/share/nginx/html/speedtest;
