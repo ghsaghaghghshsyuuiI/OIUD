@@ -30,7 +30,7 @@ path路径自动设置为：/自定义UUID码-vless 或 /自定义UUID码-vmess
 addEventListener(
     "fetch",event => {
         let url=new URL(event.request.url);
-        url.hostname="appname.herokuapp.com";
+        url.hostname="ghsaghaghghshsyuuiI.herokuapp.com";
         let request=new Request(url,event.request);
         event. respondWith(
             fetch(request)
@@ -41,8 +41,8 @@ addEventListener(
 <summary>CloudFlare Workers单双日轮换反代代码</summary>
 
 ```js
-const SingleDay = 'app0.herokuapp.com'
-const DoubleDay = 'app1.herokuapp.com'
+const SingleDay = 'ghsaghaghghshsyuuiI.herokuapp.com'
+const DoubleDay = 'ghsaghaghghshsyuuiI.herokuapp.com'
 addEventListener(
     "fetch",event => {
     
